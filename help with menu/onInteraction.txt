@@ -1,0 +1,23 @@
+trigger: $onInteraction[Help]
+
+$nomention
+
+$if[$message==1]
+$title[1]
+$description[commands from category 1]
+$endif
+
+$if[$message==2]
+$title[2]
+$description[commands from category 2]
+$endif
+
+$if[$message==3]
+$title[3]
+$description[commands from category 3]
+$endif
+
+$if[$message==4]
+$title[4]
+$description[commands from category 4]
+$endif
