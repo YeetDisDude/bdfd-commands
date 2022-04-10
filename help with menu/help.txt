@@ -1,0 +1,14 @@
+trigger: [prefix]help
+
+
+$nomention
+$title[Commands]
+$description[Choose from the menu below]
+$footer[Commands]
+$addTimestamp
+$color[$random[00000;99999]]
+$newSelectMenu[Help;1;1;Please select a category]
+$addSelectMenuOption[Help;Fun;1;;no;]
+$addSelectMenuOption[Help;Image;2;;no;]
+$addSelectMenuOption[Help;Others;3;;no;]
+$addSelectMenuOption[Help;Moderation;4;;no;]
