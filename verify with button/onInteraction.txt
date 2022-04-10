@@ -1,0 +1,20 @@
+trigger: $onInteraction[Verify]
+
+
+$nomention
+$ephemeral
+You have been verified.
+$removeButtons
+$giveRole[$authorID;role id for the verified role]
+$suppressErrors
+$removeButtons
+
+$c[Optional!!! Logging feature]
+
+$useChannel[962686063271358464]
+$time[America/New_York]
+$sendMessage[New user verified
+```$username#$discriminator[] has been verified at
+$date
+$hour:$minute:$second GMT -4 | Eastern Daylight Time
+```]
