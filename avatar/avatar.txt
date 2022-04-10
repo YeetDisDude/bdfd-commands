@@ -1,0 +1,4 @@
+$nomention
+$color[7EC0EE]
+$title[<@$mentioned[1;yes]>'s profile picture]
+$image[$userAvatar[$mentioned[1;yes]]]
