@@ -1,0 +1,11 @@
+trigger: [prefix]verifypanel
+
+
+
+$nomention
+$title[Verify!]
+$color[ffffff]
+$description[Click on the button below to verify. If it doesn’t work, try `.verify` or `!!verify`]
+$addButton[no;Verify;Verify;primary;no]
+$deletecommand
+$onlyAdmin[You are not allowed to use this command!]
