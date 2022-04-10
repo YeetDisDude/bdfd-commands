@@ -1,0 +1,11 @@
+$onlyIf[$checkContains[$message[1];rock;paper;scissors]==true;Type in rock, paper, or scissors]
+$nomention
+
+$description[**$replaceText[$replaceText[$checkCondition[$randomText[rock;paper;scissors]==$message[1]];true;i choose $randomText[rock;paper;scissors] and you too.;1];false;$replaceText[$replaceText[$checkCondition[$randomText[rock;paper;scissors]==rock];true;$replaceText[$replaceText[$checkCondition[$message[1]==scissors];true;I win :)
+i choose $randomText[rock;paper;scissors];1];false;$replaceText[$checkCondition[$message[1]==paper];true;I lose :(
+I choose $randomText[rock;paper;scissors];1];1];1];false;$replaceText[$replaceText[$checkCondition[$randomText[rock;paper;scissors]==paper];true;$replaceText[$replaceText[$checkCondition[$message[1]==rock];true;I win :)
+i choose $randomText[rock;paper;scissors];1];false;$replaceText[$checkCondition[$message[1]==scissors];true;i loose :(
+i choose $randomText[rock;paper;scissors];1];1];1];false;$replaceText[$replaceText[$checkCondition[$randomText[rock;paper;scissors]==scissors];true;$replaceText[$replaceText[$checkCondition[$message[1]==paper];true;I win :)
+i choose $randomText[rock;paper;scissors];1];false;$replaceText[$checkCondition[$message[1]==rock];true;i loose :(
+i choose $randomText[rock;paper;scissors];1];1];1];false;nothing;1];1];1];1]**]
+$color[$randomText[00ff00;ff00ff;ff0000]]
