@@ -1,0 +1,16 @@
+variable needed:
+loggingchh
+value: none
+
+$nomention
+$onlyIf[$channelExists[$mentionedChannels[1]]!=false;> The channel you provided doesn’t exist.]
+$httpGet[https://api.popcat.xyz/randomcolor]
+$setServerVar[loggingch;$mentionedChannels[1]]
+$title[Logging channel set]
+$description[The logging channel has been set to <#$mentionedChannels[1]>]
+$footerIcon[$authorAvatar]
+$addTimestamp
+$color[$httpResult[hex]]
+$argsCheck[>1;> You need to provide a channel for the logging channel!]
+$onlyAdmin[> You do not have permission(s) to use this command. `Administrator`]
+$suppressErrors[You can not use this command in dms or I do not have permissions to use this command.]
