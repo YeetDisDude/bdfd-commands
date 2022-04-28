@@ -1,0 +1,22 @@
+$nomention
+$banID[$mentioned[1]]
+$httpGet[https://api.popcat.xyz/randomcolor]
+$title[Successfully kicked]
+$description[**$username#$discriminator[]** has banned **$username[$mentioned[1]]#$discriminator[$mentioned[1]]**
+Reason: $replaceText[$replaceText[$checkCondition[$noMentionMessage==];true;Not provided;1];false;$noMentionMessage;1]]
+$footer[]
+$addTimestamp
+$footerIcon[$authorAvatar]
+$color[$httpResult[hex]]
+
+$sendEmbedMessage[$getServerVar[loggingch];;User Banned!;;User <@$authorID> has banned <@$mentioned[1]> at <t:$getTimestamp>
+Reason: $replaceText[$replaceText[$checkCondition[$noMentionMessage==];true;Not provided;1];false;$noMentionMessage;1];$httpResult[hex];;;;]
+
+$onlyPerms[ban;You do not have the permission: `ban`.]
+$onlyBotPerms[ban;> I do not have permissions to use this command.]
+$onlyIf[$mentioned[1]!=$serverOwner;> You can’t ban the server’s owner.]
+$onlyIf[$mentioned[1]!=;> Who do you want to ban?]
+$onlyIf[$mentioned[1]!=$botID;Don’t ban me...]
+$onlyIf[$mentioned[1]!=$authorID;You can’t ban your self silly.]
+$suppressErrors[Please set up a logging channel with `.setloggingch` to begin.]
+$onlyIf[$guildID!=;> No moderation commands for you in dms teehee]
