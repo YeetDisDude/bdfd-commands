@@ -1,0 +1,19 @@
+$nomention
+$httpGet[https://api.popcat.xyz/randomcolor]
+
+$argsCheck[>1;How many messages do you want to purge?]
+$onlyIf[$isNumber[$message]!=false;> The message you provided isn’t a number]
+$onlyIf[$message!=0;> I can’t purge 0 message...]
+$onlyIf[$message!=99;> I can’t purge more messages more than that]
+$onlyPerms[managemessages;You do not have permissions to use this command.]
+
+$clear[$message]
+$title[Messages Cleared]
+$description[$message messages have been cleared]
+$footer[]
+$footerIcon[$authorAvatar]
+$addTimestamp
+$color[$httpResult[hex]]
+
+$deleteIn[5]
+$suppressErrors[I can’t purge messages over then 14 days or something else went wrong]
