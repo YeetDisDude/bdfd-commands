@@ -1,0 +1,16 @@
+$nomention
+$httpGet[https://api.popcat.xyz/randomcolor]
+$resetUserVar[warn]
+
+$title[Warnings cleared]
+$description[The warnings for <@$mentioned[1]> has been cleared,]
+$footer[]
+$footerIcon[$authorAvatar]
+$addTimestamp
+$color[$httpResult[hex]]
+
+$sendEmbedMessage[$getServerVar[loggingch];;Warning Cleared!;;Moderator <@$authorID> has cleared <@$mentioned[1]>’s warning at <t:$getTimestamp>]
+
+$onlyAdmin[You do not have permissions to use this command.]
+$onlyIf[$guildID!=;> No moderation commands for you in dms teehee]
+$argsCheck[>1;Who’s warning do you want to clear]
